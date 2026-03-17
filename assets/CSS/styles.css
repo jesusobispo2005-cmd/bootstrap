@@ -1,0 +1,31 @@
+/* variables */
+:root{
+    --text-color:rgb(255, 255, 255);
+    --sombras: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* reset CSS */
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* clases */
+.r-nav{
+display: flex;    
+justify-content: end;
+}
+
+.header_bg{
+    background-image:linear-gradient(rgba(3, 3, 3, 0.19), rgba(3, 3, 3, 0.19)),
+    linear-gradient(180deg, rgba(77, 231, 234, 0.3) 0%, rgba(8, 110, 111, 1) 100%), url('/assets/media/header.png');
+    background-size: cover;
+    height: 660px;
+}
+
+.text-shadow{
+    color:var(--text-color);
+    text-shadow: var(--sombras);
+}

@@ -92,3 +92,26 @@
   height: 100%;
   object-fit: cover;
 }
+
+.projects_section {
+  background-color: #76a69e;
+  padding: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 760px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

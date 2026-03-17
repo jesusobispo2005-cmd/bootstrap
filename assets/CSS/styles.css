@@ -1,31 +1,61 @@
 /* variables */
-:root{
-    --text-color:rgb(255, 255, 255);
-    --sombras: 2px 2px 4px rgba(0, 0, 0, 0.8);
+:root {
+  --text-color: rgb(255, 255, 255);
+  --sombras: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 
 /* reset CSS */
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Abhaya Libre ExtraBold";
 }
-
 
 /* clases */
-.r-nav{
-display: flex;    
-justify-content: end;
+.r-nav {
+  display: flex;
+  justify-content: end;
 }
 
-.header_bg{
-    background-image:linear-gradient(rgba(3, 3, 3, 0.19), rgba(3, 3, 3, 0.19)),
-    linear-gradient(180deg, rgba(77, 231, 234, 0.3) 0%, rgba(8, 110, 111, 1) 100%), url('/assets/media/header.png');
-    background-size: cover;
-    height: 660px;
+.header_bg {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-image:
+    linear-gradient(rgba(3, 3, 3, 0.19), rgba(3, 3, 3, 0.19)),
+    linear-gradient(
+      180deg,
+      rgba(77, 231, 234, 0.3) 0%,
+      rgba(8, 110, 111, 0.5) 100%
+    ),
+    url("/assets/media/header.png");
+  background-size: cover;
+  height: 660px;
+  position: relative;
 }
 
-.text-shadow{
-    color:var(--text-color);
-    text-shadow: var(--sombras);
+.top-nav {
+  width: 100%;
+}
+
+.text-shadow {
+  font-size: large;
+  color: var(--text-color);
+  text-shadow: var(--sombras);
+}
+
+.titulo_header {
+  border: solid 5px rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px 40px; /* Añadimos espacio interno para que no respire mejor */
+  text-shadow: var(--sombras);
+}
+
+.cuadro_header {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el título en el espacio sobrante */
+  text-align: center;
 }
